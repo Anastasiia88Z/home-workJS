@@ -893,4 +893,42 @@ child.age = 27;
   
 }
 
-4. 
+4. function Car({brand, model, price}) {
+  this.brand = brand;
+  this.model = model;
+  this.price = price;
+}
+
+
+const myCar1 = new Car('Audi', 'Q3', 36000);
+
+console.log(myCar1);
+
+const myCar2 = new Car('BMW', 'X5', 58900);
+
+console.log(myCar2);
+
+const myCar3 = new Car('Nissan', 'Murano', 31700);
+
+console.log(myCar3);
+
+5. function Car({brand, model, price}) {
+  this.brand = brand;
+  this.model = model;
+  this.price = price;
+}
+
+const  myCar = new Car("Audi", "Q3", 36000);
+
+Car.prototype.changePrice = function(newPrice) {
+  this.price = newPrice;
+};
+
+Car.prototype.getPrice = function() {
+  return this.price;
+};
+
+console.log(Car);
+
+
+6. 
