@@ -1338,4 +1338,110 @@ MODUL 6
   return totalPrice;
 }
 
-2. 
+2. function filterArray(numbers, value) {
+  const filteredNumbers = [];
+  // Пиши код ниже этой строки
+
+      numbers.forEach(function(number, i) {
+    
+        if (numbers[i] > value) {
+      filteredNumbers.push(numbers[i]);
+    }
+  })
+  // Пиши код выше этой строки
+  return filteredNumbers;
+}
+
+3. function getCommonElements(firstArray, secondArray) {
+  const commonElements = [];
+  // Пиши код ниже этой строки
+
+  firstArray.forEach(function(firstArray) {
+    if (secondArray.includes(firstArray)) {
+      commonElements.push(firstArray);
+    }
+  })
+
+  return commonElements;
+  // Пиши код выше этой строки
+}
+
+4. const calculateTotalPrice = (quantity, pricePerItem) =>{
+  // Пиши код выше этой строки
+  return quantity * pricePerItem;
+}
+
+
+5. const calculateTotalPrice = (quantity, pricePerItem) => 
+quantity * pricePerItem;
+
+
+6. // Пиши код ниже этой строки
+const calculateTotalPrice = (orderedItems) =>{
+  let totalPrice = 0;
+
+  orderedItems.forEach((item)=> {
+    totalPrice += item;
+  });
+
+  return totalPrice;
+}
+
+
+// Пиши код выше этой строки
+
+7.  Пиши код ниже этой строки
+const filterArray = (numbers, value) => {
+    const filteredNumbers = [];
+  
+    numbers.forEach((number) => {
+      if (number > value) {
+        filteredNumbers.push(number);
+      }
+    });
+  
+    // Пиши код выше этой строки
+    return filteredNumbers;
+  }
+
+  8. // Пиши код ниже этой строки
+  const getCommonElements = (firstArray, secondArray)=>{
+      const commonElements = [];
+    
+      firstArray.forEach((element) => {
+        if (secondArray.includes(element)) {
+          commonElements.push(element);
+        }
+      });
+    
+      // Пиши код выше этой строки
+      return commonElements;
+    }
+
+    9. function changeEven(numbers, value) {
+      // Пиши код ниже этой строки
+    const newArray = [];
+    
+      numbers.forEach(number => {
+        if (number % 2 !== 0) {
+          newArray.push(number);
+        } else if(number % 2 === 0) {
+          newArray.push(number + value)
+        }
+      });
+           return newArray;
+      // Пиши код выше этой строки
+    }
+  
+  
+10. const planets = ['Земля', 'Марс', 'Венера', 'Юпитер'];
+// Пиши код ниже этой строки
+const planetsLengths = planets.map((planet)=> planet.length);
+
+
+console.log(planets);
+
+console.log(planetsLengths);
+
+
+    
