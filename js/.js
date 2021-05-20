@@ -1443,5 +1443,119 @@ console.log(planets);
 
 console.log(planetsLengths);
 
+11. const books = [
+  { title: 'Последнее королевство', author: 'Бернард Корнуэлл', rating: 8.38 },
+  { title: 'На берегу спокойных вод', author: 'Роберт Шекли', rating: 8.51 },
+  { title: 'Сон смешного человека', author: 'Федор Достоевский', rating: 7.75 },
+  { title: 'Красна как кровь', author: 'Ли Танит', rating: 7.94 },
+  { title: 'Враг Божий', author: 'Бернард Корнуэлл', rating: 8.67 }
+];
+// Пиши код ниже этой строки
 
+const titles = books.map(book => book.title);
+
+12. const books = [
+  {
+    title: 'Последнее королевство',
+    author: 'Бернард Корнуэлл',
+    genres: ['приключения', 'историческое']
+  },
+  {
+    title: 'На берегу спокойных вод',
+    author: 'Роберт Шекли',
+    genres: ['фантастика']
+  },
+  {
+    title: 'Красна как кровь',
+    author: 'Ли Танит',
+    genres: ['ужасы', 'мистика']
+  }
+];
+// Пиши код ниже этой строки
+
+const genres = books.flatMap((book) => book.genres);
+
+13. // Пиши код ниже этой строки
+const getUserNames = users => {
+    return users.map(user =>user.name);
+
+  };
+  // Пиши код выше этой строки
+
+14. / Пиши код ниже этой строки
+const getUserEmails = users => {
+    return users.map(user=> user.email);
+
+  };
+  // Пиши код выше этой строки
+
+15. const numbers = [17, 24, 82, 61, 36, 18, 47, 52, 73];
+// Пиши код ниже этой строки
+const evenNumbers = numbers.filter(number=>number%2==0);
+const oddNumbers = numbers.filter(number=>number%2);
+
+16. const books = [
+  {
+    title: 'Последнее королевство',
+    author: 'Бернард Корнуэлл',
+    genres: ['приключения', 'историческое']
+  },
+  {
+    title: 'На берегу спокойных вод',
+    author: 'Роберт Шекли',
+    genres: ['фантастика', 'мистика']
+  },
+  {
+    title: 'Красна как кровь',
+    author: 'Ли Танит',
+    genres: ['ужасы', 'мистика', 'приключения']
+  }
+];
+// Пиши код ниже этой строки
+const allGenres = books.flatMap(book=>book.genres);
+const uniqueGenres = allGenres.filter(
+  (genre,index,array) => array.indexOf(genre) === index
+  );
+
+  17. const books = [
+    { title: 'Последнее королевство', author: 'Бернард Корнуэлл', rating: 8.38 },
+    { title: 'На берегу спокойных вод', author: 'Роберт Шекли', rating: 8.51 },
+    { title: 'Сон смешного человека', author: 'Федор Достоевский', rating: 7.75 },
+    { title: 'Красна как кровь', author: 'Ли Танит', rating: 7.94 },
+    { title: 'Враг Божий', author: 'Бернард Корнуэлл', rating: 8.67 }
+  ];
+  
+  const MIN_RATING = 8;
+  const AUTHOR = 'Бернард Корнуэлл';
+  // Пиши код ниже этой строки
+  
+  const topRatedBooks = books.filter((book)=> book.rating >= MIN_RATING);
+  const booksByAuthor = books.filter((book)=> book.author === AUTHOR);
+
+  18. / Пиши код ниже этой строки
+  const getUsersWithEyeColor = (users, color) => {
+   return users.filter((user)=> user.eyeColor === color);
+  
+  };
+  // Пиши код выше этой строки
+
+  19. // Пиши код ниже этой строки
+  const getUsersWithAge = (users, minAge, maxAge) => {
+    
+   return users.filter(
+   (user) => user.age >= minAge && user.age <= maxAge);
+  
+  };
+  
+  // Пиши код выше этой строки
+
+  20. // Пиши код ниже этой строки
+  const getUsersWithFriend = (users, friendName) => {
+     return users.filter(
+     (user)=> user.friends.includes(friendName)
+     )
+  };
+  // Пиши код выше этой строки
+
+  21. 
     
