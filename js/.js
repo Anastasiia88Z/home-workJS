@@ -1823,7 +1823,16 @@ const getSortedFriends = users => {
 };
 // Пиши код выше этой строки
 
-44. 
+44. // Пиши код ниже этой строки
+const getTotalBalanceByGender = (users, gender) => {
+  return [...users]
+  
+  .filter(user => user.gender === gender)
+  .reduce((total,user)=> {
+    return user.balance+total;
+  },0)
+};
+// Пиши код выше этой строки
 
 
     
